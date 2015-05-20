@@ -36,7 +36,7 @@ section {
 }
 
  /**********************************
-	Images & Backgrounds
+	Images & Backgrounds // Paddings 
  *************************************/
 .img-responsive {
 	margin-top: 10px;
@@ -50,6 +50,9 @@ section {
 .layer {
 	background-color: rgba(0, 0, 0, 0.2);
   	padding: 200px;
+  	color: #fff;
+  	border: 1px;
+  	border-color: #fff;
 }
 .cover {
 	background-size: 100%;
@@ -75,6 +78,23 @@ section {
 
 .bg_bar_img > .container {
 	border-color: #fff;
+}
+
+
+.pt30 {
+	padding-top: 30px;
+}
+
+.pb30 {
+	padding-bottom: 30px;
+}
+
+.pt40 {
+	padding-top: 40px;
+}
+
+.pb40 {
+	padding-bottom: 40px;
 }
  /**********************************
 	Buttons
@@ -121,10 +141,6 @@ h2 {
 
 h3 {
 	font-size: 20px;
-}
-
-.center-text {
-	text-align: center;
 }
 
 .bg_bar_img > h2 {
