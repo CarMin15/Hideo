@@ -1,0 +1,163 @@
+/*
+
+body {
+	color: white;
+}*/
+
+section {
+	color: white;
+	padding: 30px;
+	margin: 0;
+}
+
+
+ /**********************************
+	Navigation bar
+ *************************************/
+
+.navbar::selected {
+	color: #53bad1;
+}
+.navbar-inverse {
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.70);
+}
+
+.nav li a:hover {
+	color: #53bad1;
+}
+
+.navbar-brand > img {
+	margin-top: -5px;
+}
+
+#menu_navbar-collapse > .navbar-nav > li > a {
+	line-height: 30px;
+	background: transparent;
+}
+.breadcrumb {
+	background-color: transparent;
+}
+.breadcrumb > li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+ /**********************************
+	Images & Backgrounds // Paddings 
+ *************************************/
+.img-responsive {
+	margin-top: 10px;
+}
+
+.row {
+	padding-left: 30px; 
+	padding-top: 20px;
+}
+
+.layer {
+	background-color: rgba(0, 0, 0, 0.2);
+  	padding: 200px;
+  	color: #fff;
+  	border: 1px;
+  	border-color: #fff;
+}
+.cover {
+	background-size: 100%;
+}
+
+.lead {
+	color: white;
+}
+
+#FullScreenSlide {
+	background-color: #53bad1;
+	padding: 30px;
+}
+
+.photo-bg {
+	width: 1365px;
+	background-repeat: no-repeat;
+  	background-position: 50% 0;
+  	background-size: cover;
+  	background-attachment: fixed;
+}
+
+.bg_bar_img {
+	background-color: #53bad1;
+}
+
+.bg_bar_img > .container {
+	border-color: #fff;
+}
+
+
+.pt30 {
+	padding-top: 30px;
+}
+
+.pb30 {
+	padding-bottom: 30px;
+}
+
+.pt40 {
+	padding-top: 40px;
+}
+
+.pb40 {
+	padding-bottom: 40px;
+}
+ /**********************************
+	Buttons
+ *************************************/
+
+.btn-lg {
+	margin-bottom: 5px;
+}
+
+  /**********************************
+	TExt
+ *************************************/
+
+body {
+	font-size:14px;
+	line-height: 22px;
+	font-family: 'Roboto',sans-serif;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+	margin: 0;
+	padding: 0;
+	padding-top: 81px;
+	background: #383838;
+}
+h1, h2, h3, h4, h5, h6, {
+	font-family: 'Roboto',sans-serif;
+	font-weight: 300;
+	line-height: 1.25em;
+	margin: 0 0 0.75em 0;
+}
+h1 {
+	font-size: 36px;
+	margin-bottom: 0.25em;
+	font-weight: 100;
+}
+h1 strong{
+	padding:0 10px;
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+.bg_bar_img > h2 {
+	color: #fff;
+}
+
+.text_left {
+	text-align: left;
+}
