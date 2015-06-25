@@ -3,6 +3,7 @@
  --> Images & Backgrounds // Paddings 
  --> Buttons
  --> TExt
+ --> Customization
  *************************************/
 
 
@@ -65,10 +66,23 @@ body > .menu_sticky {
 	margin-top: 10px;
 }
 
+
 .row {
 	padding-left: 30px; 
 	padding-top: 20px;
 }
+
+#Thumbnail_img > ul {
+	padding-left: 0;
+	padding-top: 0;
+}
+
+
+.minimalBox {
+	width: 20%;
+	display: inline-block;
+}	
+
 
 .layer {
 	background-color: rgba(0, 0, 0, 0.2);
@@ -115,12 +129,25 @@ body > .menu_sticky {
 
 .bg_bar_img {
 	background-color: #53bad1;
+	padding: 20px;
 }
 
-.bg_bar_img > .container {
+.bg_bar_img > .container > .row {
+	border: 2px solid;
 	border-color: #fff;
 }
 
+.bg_layer_blue {
+	border: 2px solid;
+	padding: 30px 30px;
+
+}
+
+.info_Neko {
+	background-color: black;
+	color: white;
+	padding: 20px;
+}
 
 .pt30 {
 	padding-top: 30px;
@@ -143,6 +170,41 @@ body > .menu_sticky {
 
 .btn-lg {
 	margin-bottom: 5px;
+}
+
+.customization > .btn_transp {
+	background-color: transparent;
+	border-color: transparent;
+	color: #5bc0de;
+	text-align: left;
+}
+.customization > .btn:hover, .btn:active {
+	background-color: #5bc0de;
+	border-color: #5bc0de;
+	color: white; 
+}
+
+
+ /**********************************
+	MAP
+ *************************************/
+
+/*
+#map_canvas {
+  width: 500px;
+  height: 380px;
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0px);
+  background-color: rgb(229, 227, 223)
+}
+*/
+
+.map {
+	width:1140px;
+	height:380px;
+	margin-top: 30px;
+
 }
 
   /**********************************
@@ -183,6 +245,13 @@ h2 {
 h3 {
 	font-size: 20px;
 }
+
+.footer_info {
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+}
+
 .header {
 	height: 300px;
 }
@@ -198,4 +267,12 @@ h3 {
 
 .text_left {
 	text-align: left;
+}
+
+/**********************************
+	Customization
+ *************************************/
+
+.row .col-md-3 {
+  padding-top: 5px;
 }

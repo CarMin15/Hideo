@@ -12,21 +12,35 @@
 	<link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="CSS/main.css">
 
+	<!-- Google Map -->
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		function initialize() {
+		  var mapProp = {
+		    center:new google.maps.LatLng(51.508742,-0.120850),
+		    zoom:5,
+		    mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
 </head>
 <body>
 	<div id="FullScreenSlide" class="header">
 		<div>
-			<div class="">
+			<div>
 				<img src="">
 			</div>	
 			<div>
-				<h2>Hello, we are Ideo!</h2>
+				<h2 class="text-center">Hello, we are Ideo!</h2>
 			</div>
 			<div></div>	
 		</div>
 	</div>
 	<div class="menu_sticky">
-		<nav id="nav" class="navbar navbar-inverse" role="navigation">
+		<nav id="nav" class="navbar navbar-inverse col-md-12" role="navigation">
 			<div class="container">
 				<div class="navbar-header">				
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu_navbar-collapse">
@@ -173,33 +187,69 @@
 
 
 	<! -- Thumbnail images -- !>
-	<section>
-		<div></div>
-	</section>
+	<div id="Thumbnail_img">
+		<ul>
+			<li class="minimalBox">
+				<img src="img/vign6.jpg" class="img-responsive">
+				<figcaption></figcaption>
+			</li><li class="minimalBox">
+				<img src="img/vign8.jpg" class="img-responsive">
+				<figcaption></figcaption>
+			</li><li class="minimalBox">
+				<img src="img/vign2.jpg" class="img-responsive">
+				<figcaption></figcaption>
+			</li><li class="minimalBox">
+				<img src="img/vign1.jpg" class="img-responsive">
+				<figcaption></figcaption>
+			</li><li class="minimalBox">
+				<img src="img/vign5.jpg" class="img-responsive">
+				<figcaption></figcaption>
+			</li><li class="minimalBox">
+				<img src="img/vign7.jpg" class="img-responsive">
+				<figcaption></figcaption>
+			</li><li class="minimalBox">
+				<img src="img/vign3.jpg" class="img-responsive">
+				<figcaption></figcaption>
+			</li><li class="minimalBox">
+				<img src="img/vign4.jpg" class="img-responsive">
+				<figcaption></figcaption>
+			</li><li class="minimalBox">
+				<img src="img/vign9.jpg" class="img-responsive">
+				<figcaption></figcaption>
+			</li><li class="minimalBox">
+				<img src="img/vign6.jpg" class="img-responsive">
+				<figcaption></figcaption>
+			</li>
+		</ul>
+	</div>
 
 	<! -- Customization -- !>
 	<section>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<div>
-						<ul>
+						<ul class="customization">
 							<button type="button" class="btn btn-info btn-responsive btn-lg col-xs-12">Easy customization</button>
-							<button type="button" class="btn btn-default btn-lg col-xs-12">Css framework</button>
-							<button type="button" class="btn btn-default btn-lg col-xs-12">Retina Ready UI</button>
+							<button type="button" class="btn btn-default btn-lg col-xs-12 btn_transp">Css framework</button>
+							<button type="button" class="btn btn-default btn-lg col-xs-12 btn_transp">Retina Ready UI</button>
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<img class="img-responsive" src="img/home-carousel-b-1.png">
-				</div>
-				<div class="col-md-4">
-					<h3>Easy customization</h3>
-					<p>Hideo is build with easy customization in mind. Out of the box, you get more than 30 page templates, 10 color schemes and multiple home page layouts variants, from corporate to agency portfolio, including a one page version...
-					</p>
-					<h3>Building blocks</h3>
-					<p>All layouts are made of sections, that you can easily combine to fit your own project.</p>
-					<p>"Just copy and paste the block you need to easily built your layout!"</p>
+				<div class="col-md-9">
+					<div>
+						<div class="col-md-6">
+							<img class="img-responsive" src="img/home-carousel-b-1.png">
+						</div>
+						<div class="col-md-6">
+							<h3>Easy customization</h3>
+							<p>Hideo is build with easy customization in mind. Out of the box, you get more than 30 page templates, 10 color schemes and multiple home page layouts variants, from corporate to agency portfolio, including a one page version...
+							</p>
+							<h3>Building blocks</h3>
+							<p>All layouts are made of sections, that you can easily combine to fit your own project.</p>
+							<p>"Just copy and paste the block you need to easily built your layout!"</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -262,13 +312,13 @@
 
 	<! -- Blue separation bar -- !>
 	<section class="bg_bar_img">
-		<div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-5">
+		<div class="container">
+			<div class="col-md-12">
+				<div class="row bg_layer_blue">
+					<div class="col-md-8">
 						<h4>Hideo is the template you need for your next project</h4>
 					</div>
-					<div class="col-md-2 col-md-offset-5">
+					<div class="col-md-4">
 						<button class="btn btn-default pull-right">purchase now</button>
 					</div>
 				</div>
@@ -278,20 +328,81 @@
 
 	<! -- Contact us MAP -- !>
 	<section>
-		<div class="container"></div>
+		<div class="container">
+			<h2 class="text-center">Contact us</h2>
+			<div id="googleMap" class="map"></div>
+		</div>
 	</section>
 
 	<! -- Contact us info -- !>
 	<section>
-		<div class="container"></div>
+		<div class="container">
+			<div class="col-md-4">
+				<h3 class="lead">Address:</h3>
+				<p>Himalaya Company <br>77 Mass. Ave., E14/E15 <br>Cambridge, MA 02139-4307 USA</p>
+				<h3 class="lead">Phone</h3>
+				<p>615.200.4681</p>
+			</div>
+			<div class="col-md-4">
+				<form class="form">
+					<div class="form-group">
+						<label for="name"><h3 class="lead">Name:</h3></label>
+						<input type="text" class="form-control" id="name" placeholder="Enter name">
+					</div>
+					<div class="form-group">
+						<labe for="email"><h3 class="lead">Email:</h3></label>
+						<input type="email" class="form-control" id="email" placeholder="Enter email">
+					</div>
+					<div class="form-group">
+						<label for="phone"><h3 class="lead">Phone:</h3></label>
+						<input type="phone" class="form-control" id="phone" placeholder="Enter phone number">
+					</div>
+					<button type="submit" class="btn btn-md btn-default">Submit</button>
+				</form>
+			</div>
+			<div class="col-md-4">
+				<form>
+					<div class="form-group">
+						<label for="Comments"><h3 class="lead">Comments</h3></label>
+						<textarea type="text" class="form-control" id="comments" rows="4" placeholder="Enter your message..."></textarea>
+					</div>
+					<div>
+						<legend>Security</legend> 
+						<img src="js-plugin/neko-contact-ajax-plugin/php/image.php">
+						<input type="text" class="col-md-5">
+					</div>
+				</form>
+			</div>
+		</div>
 	</section>
 
 	<! -- Info Cia -- !>
-	<section>
-		<div class="container"></div>
-	</section>
+	<div class="info_Neko">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="img/neko-logo.png">
+					<p><strong style="">Little Neko</strong> is a web design and development studio. We build responsive HTML5 and CSS# templates, integrating best web design practises and up-to-date web technologies to create great user experiences. We love what we do and hope you too!</p>
+					<p></p>
+				</div>
+				<div class="col-md-4">
+					<h3>Little NEKO</h3>
+					<p></p>
+				</div>
+				<div class="col-md-4">
+					<h3>Follow us, we are social</h3>
+					<p></p>
+				</div>
 
-	<footer></footer>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div>
+			<p class="footer_info">Copyright © 2015 Little NEKO / All rights reserved.</p>
+		</div>
+	</footer>
 
 	<!-- Javascript & JQuery -->
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
