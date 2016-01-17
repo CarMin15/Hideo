@@ -1,17 +1,13 @@
  /********************************** 
  --> Navigation bar
- --> Images & Backgrounds // Paddings 
+ --> Images & Backgrounds
+ --> Paddings 
  --> Buttons
  --> TExt
+ --> Thumbnail Images Bar
  --> Customization
  *************************************/
 
-
-/*
-
-body {
-	color: white;
-}*/
 
 section {
 	color: white;
@@ -59,30 +55,21 @@ ul.nav.navbar-nav.navbar-right {
 body > .menu_sticky {
 	z-index: 1;
 }
- /**********************************
-	Images & Backgrounds // Paddings 
- *************************************/
-.img-responsive {
-	margin-top: 10px;
-}
 
+ /**********************************
+	Images & Backgrounds  
+ *************************************/
 
 .row {
-	padding-left: 30px; 
+	/*padding-left: 30px; */
 	padding-top: 20px;
 }
 
 #Thumbnail_img > ul {
-	padding-left: 0;
-	padding-top: 0;
+	padding: 0;
+	margin: 0;
 }
-
-
-.minimalBox {
-	width: 20%;
-	display: inline-block;
-}	
-
+	
 
 .layer {
 	background-color: rgba(0, 0, 0, 0.2);
@@ -120,7 +107,7 @@ body > .menu_sticky {
 }
 
 .photo-bg {
-	width: 1365px;
+	width: 100%;
 	background-repeat: no-repeat;
   	background-position: 50% 0;
   	background-size: cover;
@@ -148,6 +135,10 @@ body > .menu_sticky {
 	color: white;
 	padding: 20px;
 }
+
+ /**********************************
+	Paddings
+ *************************************/
 
 .pt30 {
 	padding-top: 30px;
@@ -189,17 +180,6 @@ body > .menu_sticky {
 	MAP
  *************************************/
 
-/*
-#map_canvas {
-  width: 500px;
-  height: 380px;
-  position: relative;
-  overflow: hidden;
-  transform: translateZ(0px);
-  background-color: rgb(229, 227, 223)
-}
-*/
-
 .map {
 	width:1140px;
 	height:380px;
@@ -222,17 +202,20 @@ body {
 	/*padding-top: 81px;*/
 	background: #383838;
 }
+
 h1, h2, h3, h4, h5, h6, {
 	font-family: 'Roboto',sans-serif;
 	font-weight: 300;
 	line-height: 1.25em;
 	margin: 0 0 0.75em 0;
 }
+
 h1 {
 	font-size: 36px;
 	margin-bottom: 0.25em;
 	font-weight: 100;
 }
+
 h1 strong{
 	padding:0 10px;
 	font-weight: 300;
@@ -270,9 +253,44 @@ h3 {
 }
 
 /**********************************
+	Thumbnail Images Bar
+ *************************************/
+
+.minimalBox {
+	width: 20%;
+	display: block;
+	float: left;
+	position: relative;
+}
+
+.img.img-responsive {
+  margin-top: 0;
+}
+
+figcaption {
+	display: none;
+	background: #53bad1; 
+	color:#fff;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+.minimalBox:hover figcaption {
+	display: block;
+	transition: all 0.4s ease-in-out;
+}
+
+
+
+/**********************************
 	Customization
  *************************************/
 
-.row .col-md-3 {
-  padding-top: 5px;
+.row .columns {
+  padding-top: 70px;
 }
+
