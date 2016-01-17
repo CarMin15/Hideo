@@ -155,6 +155,8 @@ body > .menu_sticky {
 .pb40 {
 	padding-bottom: 40px;
 }
+
+
  /**********************************
 	Buttons
  *************************************/
@@ -175,13 +177,17 @@ body > .menu_sticky {
 	color: white; 
 }
 
+.customization > button {
+	width: 100%;
+	margin-top: 20px;
+}
 
  /**********************************
 	MAP
  *************************************/
 
 .map {
-	width:1140px;
+	width:100%;
 	height:380px;
 	margin-top: 30px;
 
@@ -199,7 +205,6 @@ body {
 	-webkit-text-size-adjust: 100%;
 	margin: 0;
 	padding: 0;
-	/*padding-top: 81px;*/
 	background: #383838;
 }
 
@@ -293,4 +298,5 @@ figcaption {
 .row .columns {
   padding-top: 70px;
 }
+
 
