@@ -10,7 +10,7 @@ Skills practised:
 - Use of Google fonts and Google Maps API
 - Positioning
 
-A demo of the project is hosted here: http://maria.commitd.io/Hideo 
+A demo of the project is hosted here: http://www.mariarosacarrion.com/Hideo
 
 All feedbacks are welcome and appreciated! :) 
 You can contact me at: maria.rosa.carrion@gmail.com
