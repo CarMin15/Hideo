@@ -15,6 +15,14 @@ section {
 	margin: 0;
 }
 
+section#about_us {
+	margin-top: 95px;
+}
+
+section#about_us .row:first-child {
+	padding-top: 0;
+}
+
 
  /**********************************
 	Navigation bar
@@ -26,6 +34,10 @@ section {
 .navbar-inverse {
 	padding: 10px;
 	background-color: rgba(0, 0, 0, 0.70);
+}
+
+.navbar {
+	margin: 0;
 }
 
 .nav li a:hover {
@@ -238,10 +250,6 @@ h3 {
 	color: white;
 	text-align: center;
 	margin-top: 15px;
-}
-
-.header {
-	height: 300px;
 }
 
 .bg_bar_img > h2 {
